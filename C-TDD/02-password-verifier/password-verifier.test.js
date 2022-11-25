@@ -6,3 +6,9 @@ test("Verify", function () {
   const expected = "Password accepted";
   expect(outPut).toEqual(expected);
 });
+test("Verify", function () {
+  const password = "tre1234";
+  const outPut = verify(password);
+  const expected = "Password rejected";
+  expect(outPut).toEqual(expected);
+});
